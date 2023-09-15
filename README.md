@@ -19,7 +19,7 @@ Neste projeto, foram demonstradas várias habilidades e conhecimentos técnicos,
 
 - **Banco de Dados SQL Server**: O aplicativo se conecta a um banco de dados SQL Server para armazenar os registros de empréstimo de livros.
 
-- **HTML e CSS**: As visualizações foram criadas em HTML e estilizadas usando CSS para uma interface de usuário atraente e responsiva.
+- **HTML e CSS**: As visualizações foram criadas em HTML e estilizadas usando CSS para uma interface de usuário.
 
 - **Rotas e Controladores**: Foram definidas rotas personalizadas e controladores para manipular as diferentes ações do aplicativo.
 
