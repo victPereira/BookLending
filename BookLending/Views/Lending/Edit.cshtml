@@ -1,0 +1,45 @@
+﻿@model LendingModel
+@{
+    ViewData["title"] = "Edit Loan";
+}
+
+<div class=" container bg-dark p-5 rounded-5 ">
+
+    <div class=" mb-5 text-center">
+        <h1 class="text-light">Edit Loan</h1>
+    </div>
+
+    <form method="post" asp-controller="Lending" asp-action="Edit">
+        <input type="hidden" asp-for=Id />
+
+        <div class="mb-3">
+            <label for="Receiver" class="form-label text-light">Receiver:</label>
+            <input type="text" class="form-control" asp-for="Receiver" id="Receiver" placeholder="Who received the book?">
+            <span class="text-danger" asp-validation-for="Receiver"></span>
+        </div>
+
+
+
+        <div class="mb-3">
+            <label for="Supplier" class="form-label text-light">Supplier:</label>
+            <input type="text" class="form-control" asp-for="Supplier" id="Supplier" placeholder="Who is lending the book?">
+            <span class="text-danger" asp-validation-for="Supplier"></span>
+        </div>
+
+
+
+        <div class="mb-3">
+            <label for="Book" class="form-label text-light">Book:</label>
+            <input type="text" class="form-control" asp-for="BookLend" id="Book" placeholder="What is the book?">
+            <span class="text-danger" asp-validation-for="BookLend"></span>
+        </div>
+
+
+        <div class=" d-flex gap-5 mt-5">
+            <button type="submit" class="btn btn-success w-50">EDIT</button>
+            <a class="btn btn-primary w-50" asp-controller="Lending" asp-action="Index">BACK</a>
+        </div>
+
+
+    </form>
+</div>
