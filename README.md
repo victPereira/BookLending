@@ -9,7 +9,7 @@ Este é um projeto de um aplicativo web para gerenciamento de empréstimo de liv
 
 Neste projeto, foram demonstradas várias habilidades e conhecimentos técnicos, incluindo:
 
-- **ASP.NET Core**: O projeto utiliza o framework ASP.NET Core para construir um aplicativo web robusto e escalável.
+- **ASP.NET Core**: O projeto utiliza o framework ASP.NET Core para construir um aplicativo web.
 
 - **Entity Framework Core**: O Entity Framework Core é usado para mapear objetos de modelo para o banco de dados, simplificando as operações de CRUD (Create, Read, Update, Delete).
 
