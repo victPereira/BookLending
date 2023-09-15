@@ -73,6 +73,8 @@ namespace BookLending.Controllers
                 _db.Lending.Add(lending);
                 _db.SaveChanges();
 
+                TempData["MessageSuccess"] = "Registration completed successfully!";
+
                 return RedirectToAction("Index");
             }
 
@@ -87,6 +89,8 @@ namespace BookLending.Controllers
             {
                 _db.Lending.Update(lending);
                 _db.SaveChanges();
+
+                TempData["MessageSuccess"] = "Edit completed successfully!";
 
                 return RedirectToAction("Index");
             }
@@ -105,6 +109,8 @@ namespace BookLending.Controllers
 
             _db.Lending.Remove(lending);
             _db.SaveChanges();
+
+            TempData["MessageSuccess"] = "Removal completed successfully!";
 
             return RedirectToAction("Index");
         }
