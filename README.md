@@ -1,4 +1,4 @@
-# Documentação do Projeto - Aplicativo de Empréstimo de Livros
+# Documentação do Projeto - BookLending
 
 
 ## Visão Geral
