@@ -1,43 +1,20 @@
-# Documentação do Projeto - BookLending
-
+# Aplicativo de Empréstimo de Livros
 
 ## Visão Geral
 
-Este é um projeto de um aplicativo web para gerenciamento de empréstimo de livros. O aplicativo é desenvolvido em ASP.NET Core e utiliza o Entity Framework Core para interagir com o banco de dados SQL Server. Ele permite aos usuários listar, criar, editar e excluir registros de empréstimos de livros.
+Este é um aplicativo web para gerenciamento de empréstimo de livros, desenvolvido em ASP.NET Core. O aplicativo permite que os usuários registrem empréstimos de livros, atualizem informações existentes, excluam registros e exportem os dados para um arquivo Excel.
 
-## Habilidades Demonstradas
+## Recursos Principais
 
-Neste projeto, foram demonstradas várias habilidades e conhecimentos técnicos, incluindo:
-
-- **ASP.NET Core**: O projeto utiliza o framework ASP.NET Core para construir um aplicativo web.
-
-- **Entity Framework Core**: O Entity Framework Core é usado para mapear objetos de modelo para o banco de dados, simplificando as operações de CRUD (Create, Read, Update, Delete).
-
-- **MVC (Model-View-Controller)**: A estrutura do projeto segue o padrão MVC, separando claramente a lógica de negócios, as visualizações e os controladores.
-
-- **Validação de Modelos**: Foram aplicadas validações de modelos usando atributos, garantindo que os dados sejam inseridos corretamente.
-
-- **Banco de Dados SQL Server**: O aplicativo se conecta a um banco de dados SQL Server para armazenar os registros de empréstimo de livros.
-
-- **HTML e CSS**: As visualizações foram criadas em HTML e estilizadas usando CSS para uma interface de usuário.
-
-- **Rotas e Controladores**: Foram definidas rotas personalizadas e controladores para manipular as diferentes ações do aplicativo.
-
-- **Conexão com Banco de Dados**: A configuração da conexão com o banco de dados foi feita de forma segura, seguindo boas práticas de desenvolvimento.
-
-## Estrutura do Projeto
-
-A estrutura do projeto é organizada da seguinte forma:
-
-- `Controllers/`: Contém os controladores MVC do aplicativo.
-- `Data/`: Contém a configuração do contexto do banco de dados.
-- `Models/`: Contém os modelos de dados para empréstimos de livros e erros.
-- `Views/`: Contém as visualizações HTML para o aplicativo.
-- `wwwroot/`: Contém arquivos estáticos, como imagens e folhas de estilo.
+- Listagem de empréstimos de livros.
+- Registro de novos empréstimos com informações do receptor, fornecedor e livro.
+- Atualização de empréstimos existentes (exceto a data de empréstimo e o ID).
+- Exclusão de empréstimos.
+- Exportação de dados para um arquivo Excel.
 
 ## Como Executar o Projeto
 
-Siga estas etapas para configurar e executar o projeto em seu ambiente local:
+Para executar o projeto em seu ambiente local, siga estas etapas:
 
 1. **Requisitos Prévios**:
    - Instale o [.NET SDK](https://dotnet.microsoft.com/download).
@@ -62,17 +39,17 @@ Siga estas etapas para configurar e executar o projeto em seu ambiente local:
      ```
    - O aplicativo estará disponível em `https://localhost:5001` (ou `http://localhost:5000`).
 
-## Funcionalidades
+## Exportando para Excel
 
-O aplicativo oferece as seguintes funcionalidades:
+Você pode exportar os dados da tabela de empréstimos de livros para um arquivo Excel. Para fazer isso, siga estas etapas:
 
-- **Listar Empréstimos de Livros**: Visualize uma lista de todos os empréstimos de livros.
+1. Acesse o aplicativo em seu navegador.
+2. Clique no botão "Export" na interface do usuário.
+3. Isso fará o download de um arquivo Excel chamado "LendingBook.xls", que conterá todos os dados da tabela de empréstimos de livros.
 
-- **Registrar Novo Empréstimo**: Adicione um novo empréstimo de livro com informações de receptor, fornecedor e livro.
+## Atualização de Dados
 
-- **Editar Empréstimo Existente**: Atualize informações de um empréstimo de livro existente.
-
-- **Excluir Empréstimo**: Remova um empréstimo de livro da lista.
+Ao atualizar os dados de um empréstimo de livro, observe que a data de empréstimo e o ID não são atualizados automaticamente. A data de empréstimo permanecerá a mesma que estava originalmente no registro.
 
 ## Contribuição
 
@@ -83,5 +60,8 @@ Este projeto é de código aberto, e você é incentivado a contribuir. Aqui est
 - Enviar Pull Requests: Se você tem melhorias ou correções para propor, sinta-se à vontade para enviar um pull request.
 
 
-**Feito por:** [Victor Pereira](https://github.com/victPereira)
+**Feito por:** [Victor V. Pereira]([https://github.com/seu-usuario-github](https://github.com/victPereira))
 
+Se você tiver alguma dúvida ou precisar de mais informações, sinta-se à vontade para entrar em contato através do GitHub ou do meu e-mail: vict.torpereira@hotmail.com
+
+Este projeto demonstra minhas habilidades em desenvolvimento web com ASP.NET Core, banco de dados SQL Server e exportação de dados para Excel. Obrigado por revisar esta documentação e o projeto em si.
